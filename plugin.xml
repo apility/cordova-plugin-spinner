@@ -17,6 +17,21 @@
         <clobbers target="SpinnerPlugin" />
     </js-module>
 
+    <!-- Browser Configuration -->
+    <platform name="browser">
+
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="SpinnerPlugin">
+                <param name="browser-package" value="SpinnerPlugin" />
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/SpinnerPlugin.java" target-dir="src/net/justin_credible/cordova" />
+        <source-file src="src/android/FakeR.java" target-dir="src/net/justin_credible/cordova" />
+        <source-file src="src/android/spinner_plugin_styles.xml" target-dir="res/values"/>
+
+    </platform>
+
     <!-- Android Configuration -->
     <platform name="android">
 
