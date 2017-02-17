@@ -22,13 +22,13 @@
 
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="SpinnerPlugin">
-                <param name="browser-package" value="SpinnerPlugin" />
+                <param name="browser-package" value="SpinnerPlugin" /> 
             </feature>
         </config-file>
 
-        <source-file src="src/android/SpinnerPlugin.java" target-dir="src/net/justin_credible/cordova" />
-        <source-file src="src/android/FakeR.java" target-dir="src/net/justin_credible/cordova" />
-        <source-file src="src/android/spinner_plugin_styles.xml" target-dir="res/values"/>
+        <js-module src="src/browser/SpinnerPlugin.js" name="SpinnerPlugin">
+            <runs />
+        </js-module>
 
     </platform>
 
