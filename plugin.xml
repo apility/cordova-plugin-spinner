@@ -22,7 +22,7 @@
 
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="SpinnerPlugin">
-                <param name="browser-package" value="SpinnerPlugin" /> 
+                <param name="browser-package" value="net.justin_credible.cordova.SpinnerPlugin" /> 
             </feature>
         </config-file>
 

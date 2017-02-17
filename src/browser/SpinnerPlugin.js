@@ -1,9 +1,13 @@
 module.exports = {
     activityStart: function (labelText, options, successCallback, failureCallback) {
-        successCallback();
+        if(typeof successCallback == 'function'){
+            successCallback();
+        }
     },
     activityStop: function(successCallback, failureCallback) {
-        successCallback();
+        if(typeof successCallback == 'function'){
+            successCallback();
+        }
     }
 };
 
