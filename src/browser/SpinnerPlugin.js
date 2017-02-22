@@ -23,4 +23,4 @@ module.exports = {
     }
 };
 
-require("cordova/exec/proxy").add("Spinnerplugin", module.exports);
+require("cordova/exec/proxy").add("SpinnerPlugin", module.exports);
